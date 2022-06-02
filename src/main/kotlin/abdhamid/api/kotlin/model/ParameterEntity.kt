@@ -7,7 +7,7 @@ import java.time.LocalDateTime
 import javax.persistence.*
 
 @Entity(name = "parameters")
-data class ParameterEntity (
+open class ParameterEntity (
     @Column(name = "_key", unique = true, nullable = false)
     var key: String,
 
